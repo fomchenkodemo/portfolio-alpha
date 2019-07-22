@@ -1,5 +1,6 @@
-/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 
 import React, { Component } from 'react';
 import { Heading } from '../_common';
@@ -73,9 +74,20 @@ class Header extends Component {
     });
   }
 
-  static scroll(event) {
+  toggleMenu() {
+    const { compressed } = this.state;
+
+    this.setState({ compressed: !compressed });
+  }
+
+  closeMenu() {
+    this.setState({ compressed: true });
+  }
+
+  onOptionClick(event) {
     event.preventDefault();
     Header.scrollToTargetAdjusted(event.target.getAttribute('href').substr(1));
+    this.closeMenu();
   }
 
   render() {
@@ -83,40 +95,44 @@ class Header extends Component {
     let mainNavClass = null;
     if (sticky) mainNavClass = 'sticky-nav';
 
+    const { compressed } = this.state;
+    let listsContainerClass = null;
+    if (compressed) listsContainerClass = 'compressed';
+
     return (
       <header>
         <nav id="main-nav" className={mainNavClass}>
           <div className="row clearfix">
-            <div id="lists-container" className="compressed">
+            <div id="lists-container" className={listsContainerClass}>
               <ul id="home">
                 <li className="list-option">
-                  <a href="#" onClick={event => Header.scroll(event)}>Vasily Fomchenko</a>
+                  <a href="#" onClick={event => this.onOptionClick(event)}>Vasily Fomchenko</a>
                 </li>
               </ul>
               <ul id="main-list">
                 <li className="list-option">
-                  <a href="#about-myself-section" onClick={event => Header.scroll(event)}>About myself</a>
+                  <a href="#about-myself-section" onClick={event => this.onOptionClick(event)}>About myself</a>
                 </li>
                 <li className="list-option">
-                  <a href="#my-stack-section" onClick={event => Header.scroll(event)}>My stack</a>
+                  <a href="#my-stack-section" onClick={event => this.onOptionClick(event)}>My stack</a>
                 </li>
                 <li className="list-option">
-                  <a href="#future-ventures-section" onClick={event => Header.scroll(event)}>Future ventures</a>
+                  <a href="#future-ventures-section" onClick={event => this.onOptionClick(event)}>Future ventures</a>
                 </li>
                 <li className="list-option">
-                  <a href="#cybercup-section" onClick={event => Header.scroll(event)}>First project</a>
+                  <a href="#cybercup-section" onClick={event => this.onOptionClick(event)}>First project</a>
                 </li>
                 <li className="list-option">
-                  <a href="#github-section" onClick={event => Header.scroll(event)}>GitHub</a>
+                  <a href="#github-section" onClick={event => this.onOptionClick(event)}>GitHub</a>
                 </li>
               </ul>
               <ul id="help-list">
                 <li className="list-option">
-                  <a href="#" onClick={event => Header.scroll(event)}>Contact</a>
+                  <a href="#" onClick={event => this.onOptionClick(event)}>Contact</a>
                 </li>
               </ul>
             </div>
-            <a id="mobile-nav-btn">
+            <a id="mobile-nav-btn" onClick={() => this.toggleMenu()}>
               <img
                 id="menu-icon-light"
                 className="mobile-nav-icon"
@@ -139,13 +155,13 @@ class Header extends Component {
             And I&apos;m front-end developer.
           </Heading>
         </div>
-        <a href="#about-myself-section" id="read-more-btn" onClick={event => Header.scroll(event)}>
-          <p href="#about-myself-section" onClick={event => Header.scroll(event)}>Read more</p>
+        <a href="#about-myself-section" id="read-more-btn" onClick={event => this.onOptionClick(event)}>
+          <p href="#about-myself-section" onClick={event => this.onOptionClick(event)}>Read more</p>
           <img
             href="#about-myself-section"
             src="src/assets/svg/down-arrow-icon.svg"
             alt="Down Arrow"
-            onClick={event => Header.scroll(event)}
+            onClick={event => this.onOptionClick(event)}
           />
         </a>
       </header>
