@@ -1,0 +1,26 @@
+@import 'main';
+
+.btn-container {
+    text-align: center;
+}
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+
+    padding: 10px 30px;
+
+    border-radius: 5px;
+
+    background-color: #ff4db2;
+    color: #fff;
+
+    text-decoration: none;
+
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #ff66bd;
+}
