@@ -1,5 +1,5 @@
 import React from 'react';
-import { Section, Heading, LongParagraph } from '../_common';
+import { Section, Heading, LongParagraph } from '../../_common';
 
 import './about-myself-section.scss';
 

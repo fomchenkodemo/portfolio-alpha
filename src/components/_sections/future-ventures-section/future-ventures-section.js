@@ -1,7 +1,7 @@
 import React from 'react';
-import { Section, Heading, LongParagraph } from '../_common';
+import { Section, Heading, LongParagraph } from '../../_common';
 
-import './future-ventures.scss';
+import './future-ventures-section.scss';
 
 const FutureVentures = () => (
   <Section id="future-ventures-section">

@@ -1,5 +1,10 @@
 import React from 'react';
-import { Section, Heading, LongParagraph, Button } from '../_common';
+import {
+  Section,
+  Heading,
+  LongParagraph,
+  Button,
+} from '../../_common';
 
 import './cybercup-section.scss';
 

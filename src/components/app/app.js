@@ -1,8 +1,10 @@
 import React from 'react';
-import AboutMyselfSection from '../about-myself-section';
-import MyStackSection from '../my-stack-section';
-import FutureVentures from '../future-ventures';
-import CyberCupSection from '../cybercup-section';
+import {
+  AboutMyselfSection,
+  MyStackSection,
+  FutureVenturesSection,
+  CyberCupSection,
+} from '../_sections';
 
 import './app.scss';
 
@@ -10,7 +12,7 @@ const App = () => (
   <React.Fragment>
     <AboutMyselfSection />
     <MyStackSection />
-    <FutureVentures />
+    <FutureVenturesSection />
     <CyberCupSection />
   </React.Fragment>
 );
