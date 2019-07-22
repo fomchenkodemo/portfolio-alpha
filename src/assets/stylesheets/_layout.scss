@@ -1,0 +1,10 @@
+.row {
+    margin: 0 auto;
+    margin-bottom: 50px;
+
+    max-width: 1140px;
+}
+
+.row:last-of-type {
+    margin-bottom: 0;
+}

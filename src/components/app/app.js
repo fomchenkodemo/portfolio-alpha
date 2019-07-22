@@ -1,9 +1,10 @@
 import React from 'react';
+import AboutMyselfSection from '../about-myself-section';
 
 import './app.scss';
 
 const App = () => (
-  <p>Hello World</p>
+  <AboutMyselfSection />
 );
 
 export default App;
