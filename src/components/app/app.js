@@ -4,6 +4,7 @@ import {
   MyStackSection,
   FutureVenturesSection,
   CyberCupSection,
+  GitHubSection,
 } from '../_sections';
 
 import './app.scss';
@@ -14,6 +15,7 @@ const App = () => (
     <MyStackSection />
     <FutureVenturesSection />
     <CyberCupSection />
+    <GitHubSection />
   </React.Fragment>
 );
 

@@ -14,7 +14,7 @@ const FutureVentures = () => (
       </LongParagraph>
     </div>
     <div className="row">
-      <h3>Absolutely necessary</h3>
+      <Heading level="3">Absolutely necessary</Heading>
       <ul className="future-ventures-list">
         <li>Advanced CSS (layouts, adaptive design, animation)</li>
         <li>SASS</li>
@@ -24,7 +24,7 @@ const FutureVentures = () => (
       </ul>
     </div>
     <div className="row">
-      <h3>Wanna try</h3>
+      <Heading level="3">Wanna try</Heading>
       <ul className="future-ventures-list">
         <li>Other front-end frameworks (Angular, Vue)</li>
         <li>Android development with Kotlin</li>
