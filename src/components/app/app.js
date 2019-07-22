@@ -6,6 +6,7 @@ import {
   CyberCupSection,
   GitHubSection,
 } from '../_sections';
+import Footer from '../footer';
 
 import './app.scss';
 
@@ -16,6 +17,7 @@ const App = () => (
     <FutureVenturesSection />
     <CyberCupSection />
     <GitHubSection />
+    <Footer />
   </React.Fragment>
 );
 
