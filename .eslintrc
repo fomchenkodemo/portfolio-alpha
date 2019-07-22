@@ -1,8 +1,10 @@
 {
   "extends": "airbnb",
   "rules": {
+    "no-undef": "off",
     "no-console": "off",
     "linebreak-style": "off",
+    "react/sort-comp": "off",
     "react/prop-types": "off",
     "no-underscore-dangle": "off",
     "jsx-a11y/anchor-is-valid": "off",
