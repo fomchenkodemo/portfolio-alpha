@@ -142,7 +142,7 @@ class Header extends Component {
               <img
                 id="menu-icon-dark"
                 className="mobile-nav-icon"
-                src={require('../../assets/svg/menu-icon-light.svg')}
+                src={require('../../assets/svg/menu-icon-dark.svg')}
                 alt="Menu"
               />
             </a>
