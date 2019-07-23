@@ -23,9 +23,16 @@ const CyberCupSection = () => (
         This is a utility for gamers, allowing them to bet on their skills.
       </LongParagraph>
     </div>
+    <div id="screenshots-container" className="row">
+      <img
+        className="cybercup-screenshots"
+        src="src/assets/images/screenshots-combined.png"
+        alt="CyberCup Screenshots"
+      />
+    </div>
     <div className="row">
       <div className="btn-container">
-        <Button>Watch the video</Button>
+        <Button href="https://youtu.be/JxGgn8oamw0" blank>Watch the video</Button>
       </div>
     </div>
   </Section>

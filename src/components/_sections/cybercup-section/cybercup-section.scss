@@ -4,3 +4,30 @@
     width: 25%;
     height: auto;
 }
+
+#screenshots-container {
+    text-align: center;
+}
+
+.cybercup-screenshots {
+    width: 100%;
+    height: auto;
+}
+
+/*
+ * Small phones to small tablets: from 481px to 767px
+ */
+@media only screen and (max-width: 767px) {
+    #cybercup-logo {
+        width: 30%;
+    }
+}
+
+/*
+ * Small phones: from 0px to 480px
+ */
+@media only screen and (max-width: 480px) {
+    #cybercup-logo {
+        width: 35%;
+    }
+}

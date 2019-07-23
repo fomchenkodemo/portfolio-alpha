@@ -42,3 +42,26 @@ h3 {
     font-size: 120%;
     font-weight: 300;
 }
+
+/*
+ * Small phones to small tablets: from 481px to 767px
+ */
+@media only screen and (max-width: 767px) {
+    h1 {
+        font-size: 160%;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+
+        font-size: 140%;
+    }
+
+    h2::after {
+        margin-top: 20px;
+    }
+
+    h3 {
+        margin-bottom: 10px;
+    }
+}

@@ -5,3 +5,25 @@
 
     width: 100%;
 }
+
+/*
+ * Big tablets to 1240px (widths smaller than the 1140px row)
+ */
+@media only screen and (max-width: 1240px) {
+    #about-myself-section .long-paragraph {
+        margin-left: 5%;
+
+        width: 90%;
+    }
+}
+
+/*
+ * Small phones to small tablets: from 481px to 767px
+ */
+@media only screen and (max-width: 767px) {
+    #about-myself-section .long-paragraph {
+        margin-left: 0;
+    
+        width: 100%;
+    }
+}

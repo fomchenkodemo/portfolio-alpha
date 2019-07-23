@@ -9,6 +9,25 @@
     margin-bottom: 0;
 }
 
+/*
+ * Big tablets to 1240px (widths smaller than the 1140px row)
+ */
+@media only screen and (max-width: 1240px) {
+	.row {
+        padding: 0 2%;
+    }
+}
+
+/*
+ * Small phones to small tablets: from 481px to 767px
+ */
+@media only screen and (max-width: 767px) {
+	.row {
+        padding: 0 4%;
+        margin-bottom: 30px;
+    }
+}
+
 .group:before,
 .group:after {
     content:"";
@@ -56,5 +75,22 @@
 	}
 	.span_1_of_3 {
 		width: 100%;
+	}
+}
+
+.span_2_of_2 {
+	width: 100%;
+}
+
+.span_1_of_2 {
+	width: 49.2%;
+}
+
+@media only screen and (max-width: 480px) {
+	.span_2_of_2 {
+		width: 100%; 
+	}
+	.span_1_of_2 {
+		width: 100%; 
 	}
 }

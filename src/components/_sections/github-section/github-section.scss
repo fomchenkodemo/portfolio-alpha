@@ -6,3 +6,25 @@
     width: 19.356%;
     height: auto;
 }
+
+/*
+ * Small phones to small tablets: from 481px to 767px
+ */
+@media only screen and (max-width: 767px) {
+    #github-logo {
+        margin-left: 37.096%;
+    
+        width: 25.808%;
+    }
+}
+
+/*
+ * Small phones: from 0px to 480px
+ */
+@media only screen and (max-width: 480px) {
+    #github-logo {
+        margin-left: 30%;
+    
+        width: 40%;
+    }
+}

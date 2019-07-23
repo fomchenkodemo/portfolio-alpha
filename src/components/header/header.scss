@@ -162,3 +162,93 @@ header {
 .sticky-nav #help-list li a:visited {
     color: $black;
 }
+
+/*
+ * Big tablets to 1240px (widths smaller than the 1140px row)
+ */
+@media only screen and (max-width: 1240px) {
+    #greeting-container {
+        padding: 0 2%;
+        
+        width: 100%;
+    }
+
+    #lists-container {
+        float: left;
+
+        margin-top: 48px;
+
+        height: 280px;
+        min-height: 280px;
+
+        overflow: hidden;
+
+        transition: height 0.5s, min-height 0.5s;
+    }
+
+    #lists-container.compressed {
+        height: 40px;
+        min-height: 40px;
+    }
+
+    #home,
+    #main-list,
+    #help-list {
+        float: none;
+
+        margin-top: 0;
+    }
+
+    #home li,
+    #main-list li,
+    #help-list li {
+        display: block;
+
+        margin-right: 0;
+    }
+
+    #mobile-nav-btn {
+        display: inline-block;
+
+        float: right;
+
+        margin-top: 48px;
+
+        height: 40px;
+        
+        cursor: pointer;
+    }
+
+    .mobile-nav-icon {
+        height: 40px;
+    }
+
+    #menu-icon-dark {
+        display: none;
+    }
+
+    .sticky-nav #lists-container {
+        margin-top: 0;
+    }
+
+    .sticky-nav #mobile-nav-btn {
+        margin-top: 0;
+    }
+
+    .sticky-nav #menu-icon-light {
+        display: none;
+    }
+
+    .sticky-nav #menu-icon-dark {
+        display: inline-block;
+    }
+}
+
+/*
+ * Small phones to small tablets: from 481px to 767px
+ */
+@media only screen and (max-width: 767px) {
+    #greeting-container {
+        padding: 0 4%;
+    }
+}
