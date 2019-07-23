@@ -1,5 +1,9 @@
 @import 'main';
 
+.autoprefixer-test {
+    user-select: none;
+}
+
 * {
     box-sizing: border-box;
 

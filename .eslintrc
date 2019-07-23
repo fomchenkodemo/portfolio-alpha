@@ -3,11 +3,14 @@
   "rules": {
     "no-undef": "off",
     "no-console": "off",
+    "quote-props": "off",
+    "global-require": "off",
     "linebreak-style": "off",
     "react/sort-comp": "off",
     "react/prop-types": "off",
     "no-underscore-dangle": "off",
     "jsx-a11y/anchor-is-valid": "off",
-    "react/jsx-filename-extension": "off"
+    "react/jsx-filename-extension": "off",
+    "import/no-extraneous-dependencies": "off"
   }
 }
