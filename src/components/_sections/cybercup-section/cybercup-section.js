@@ -14,7 +14,7 @@ const CyberCupSection = () => (
       <Heading level="2">
         <img
           id="cybercup-logo"
-          src="src/assets/svg/cybercup-logo.svg"
+          src={require('../../../assets/svg/cybercup-logo.svg')}
           alt="CyberCup"
         />
       </Heading>
@@ -26,7 +26,7 @@ const CyberCupSection = () => (
     <div id="screenshots-container" className="row">
       <img
         className="cybercup-screenshots"
-        src="src/assets/images/screenshots-combined.png"
+        src={require('../../../assets/images/screenshots-combined.png')}
         alt="CyberCup Screenshots"
       />
     </div>

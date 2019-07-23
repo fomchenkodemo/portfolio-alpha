@@ -136,13 +136,13 @@ class Header extends Component {
               <img
                 id="menu-icon-light"
                 className="mobile-nav-icon"
-                src="src/assets/svg/menu-icon-light.svg"
+                src={require('../../assets/svg/menu-icon-light.svg')}
                 alt="Menu"
               />
               <img
                 id="menu-icon-dark"
                 className="mobile-nav-icon"
-                src="src/assets/svg/menu-icon-dark.svg"
+                src={require('../../assets/svg/menu-icon-light.svg')}
                 alt="Menu"
               />
             </a>
@@ -159,7 +159,7 @@ class Header extends Component {
           <p href="#about-myself-section" onClick={event => this.onOptionClick(event)}>Read more</p>
           <img
             href="#about-myself-section"
-            src="src/assets/svg/down-arrow-icon.svg"
+            src={require('../../assets/svg/down-arrow-icon.svg')}
             alt="Down Arrow"
             onClick={event => this.onOptionClick(event)}
           />

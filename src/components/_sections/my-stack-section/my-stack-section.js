@@ -19,7 +19,7 @@ const MyStackSection = () => (
         <div className="tech">
           <img
             className="tech-logo"
-            src="src/assets/images/js-logo.png"
+            src={require('../../../assets/images/js-logo.png')}
             alt="JavaScript"
           />
           <p className="tech-name">
@@ -31,7 +31,7 @@ const MyStackSection = () => (
         <div className="tech">
           <img
             className="tech-logo"
-            src="src/assets/images/react-logo.png"
+            src={require('../../../assets/images/react-logo.png')}
             alt="React &amp; React Native"
           />
           <p className="tech-name">
@@ -43,7 +43,7 @@ const MyStackSection = () => (
         <div className="tech">
           <img
             className="tech-logo"
-            src="src/assets/images/redux-logo.png"
+            src={require('../../../assets/images/redux-logo.png')}
             alt="Redux"
           />
           <p className="tech-name">
@@ -57,7 +57,7 @@ const MyStackSection = () => (
         <div className="tech">
           <img
             className="tech-logo"
-            src="src/assets/images/webpack-logo.png"
+            src={require('../../../assets/images/webpack-logo.png')}
             alt="Webpack"
           />
           <p className="tech-name">
@@ -69,7 +69,7 @@ const MyStackSection = () => (
         <div className="tech">
           <img
             className="tech-logo"
-            src="src/assets/images/node-logo.png"
+            src={require('../../../assets/images/node-logo.png')}
             alt="Node.js"
           />
           <p className="tech-name">
@@ -81,7 +81,7 @@ const MyStackSection = () => (
         <div className="tech">
           <img
             className="tech-logo"
-            src="src/assets/images/mongodb-logo.png"
+            src={require('../../../assets/images/mongodb-logo.png')}
             alt="MongoDB"
           />
           <p className="tech-name">

@@ -17,7 +17,7 @@ const GitHubSection = () => (
     <div className="row">
       <img
         id="github-logo"
-        src="src/assets/images/github-logo.png"
+        src={require('../../../assets/images/github-logo.png')}
         alt="GitHub"
       />
     </div>
