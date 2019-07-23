@@ -7,3 +7,16 @@
 .future-ventures-list {
     margin-left: 80px;
 }
+
+/*
+ * Small phones: from 0px to 480px
+ */
+@media only screen and (max-width: 480px) {
+    #future-ventures-section h3 {
+        margin-left: 20px;
+    }
+    
+    .future-ventures-list {
+        margin-left: 60px;
+    }
+}
