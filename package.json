@@ -24,7 +24,7 @@
     "redux": "^4.0.1",
     "redux-thunk": "^2.3.0",
     "react-redux": "^7.0.3",
-    "express": "^4.17.1"
+    "express": "^4.17.3"
   },
   "devDependencies": {
     "autoprefixer": "^9.6.1",
